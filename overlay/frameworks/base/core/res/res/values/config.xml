@@ -506,4 +506,6 @@
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">false</bool>
 
+   <!-- Whether device has a notch -->
+   <bool name="config_haveNotch">true</bool>
 </resources>
