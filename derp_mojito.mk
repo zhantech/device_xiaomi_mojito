@@ -15,10 +15,10 @@ $(call inherit-product, device/xiaomi/mojito/device.mk)
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_mojito
+PRODUCT_NAME := derp_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10
@@ -26,5 +26,13 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Build fingerprint
+BUILD_FINGERPRINT := google/coral/coral:11/RQ3A.210605.005/7349499:user/release-keys
+BUILD_DESCRIPTION := coral-user 11 RQ3A.210605.005 7349499 release-keys
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=mojito
+    PRODUCT_NAME=mojito \
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
