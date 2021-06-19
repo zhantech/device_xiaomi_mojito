@@ -239,4 +239,5 @@ PRODUCT_COPY_FILES += \
 # Bloatware
 PRODUCT_PACKAGES += \
     GCam \
-    GalleryGo
+    GalleryGo \
+    RemovePackages
