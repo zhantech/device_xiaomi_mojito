@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_mojito.mk
+    $(LOCAL_DIR)/aicp_mojito.mk
+
+COMMON_LUNCH_CHOICES := \
+    aicp_mojito-userdebug \
+    aicp_mojito-user \
+    aicp_mojito-eng
