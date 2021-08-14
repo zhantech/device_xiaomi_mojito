@@ -34,13 +34,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Build fingerprint
-BUILD_FINGERPRINT := google/coral/coral:11/RQ3A.210805.001.A1/7474174:user/release-keys
-BUILD_DESCRIPTION := coral-user 11 RQ3A.210805.001.A1 7474174 release-keys
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=mojito
 
