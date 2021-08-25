@@ -23,6 +23,10 @@ $(call inherit-product, vendor/xiaomi/mojito/mojito-vendor.mk)
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml 
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
