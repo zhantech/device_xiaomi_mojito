@@ -60,6 +60,12 @@ PRODUCT_PACKAGES += \
     libbtconfigstore \
     bt_configstore.conf
 
+# Bloatware
+PRODUCT_PACKAGES += \
+    GCam \
+    GalleryGo \
+    RemovePackages
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
