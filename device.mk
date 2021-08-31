@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # Bluetooth
-PRODUCT_PACKAGES += \
+PRODUCT_HOST_PACKAGES += \
     BluetoothQti \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     vendor.qti.hardware.bluetooth_audio@2.0 \
@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0
 
 # Cryptfs
-PRODUCT_PACKAGES += \
+PRODUCT_HOST_PACKAGES += \
     libcryptfs_hw \
     vendor.qti.hardware.cryptfshw@1.0
 
